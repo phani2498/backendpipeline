@@ -35,7 +35,7 @@ public class AppController {
 
 	
 	@DeleteMapping("/delete/{id}")
-	public String delete(@PathVariable int id) {
+	public String delete(@PathVariable("id") int id) {
 		return s.deleteData(id);
 	}
 	
